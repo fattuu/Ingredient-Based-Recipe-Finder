@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Recipes</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+  <header class="header">
+    <h1>Your perfect recipe, guaranteed to make you happiest, is just waiting for its ingredients, enter them now :D</h1>
+  </header>
+  
+  <main class="main">
+    <form id="search-form" onsubmit="searchRecipes(event)">
+      <label for="ingredients">Input ingredients, separating them with commas:</label>
+      <input type="text" id="ingredients" required>
+      <button type="submit">Search</button>
+    </form>
+    
+    <div id="recipes" style="display: none;">
+      <h2>Recipes:</h2>
+      <div id="recipe-list" class="recipe-list"></div> <!-- Added class for styling -->
+    </div>
+  </main>
+
+  <script src="scripts.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
