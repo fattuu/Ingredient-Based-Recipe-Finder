@@ -58,7 +58,7 @@ function searchRecipes(event) {
 }
 
 function redirectToExternalLink() {
-    var externalWindow = window.open("https://docs.google.com/forms/d/e/1FAIpQLSfNxQMWKpxId1Vn3HwqoSg0asg9UEXWZAkjzpksuLf0UX10sw/viewform?usp=sf_linkhttps://docs.google.com/forms/d/e/1FAIpQLSfNxQMWKpxId1Vn3HwqoSg0asg9UEXWZAkjzpksuLf0UX10sw/viewform?usp=sf_link", "_blank");
+    var externalWindow = window.open("search.html");
 
     var checkFormSubmitted = setInterval(function() {
         if (externalWindow.closed) {
